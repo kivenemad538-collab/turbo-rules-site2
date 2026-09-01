@@ -1,17 +1,14 @@
-# Turbo RP Applications V1
+# Turbo RP Applications V1.1 - Vercel Fix
 
-موقع تقديم مستقل وجاهز لـ Vercel.
+هذه النسخة لا تحتاج أي مجلدات. ارفع جميع الملفات الموجودة هنا مباشرة إلى جذر GitHub repository.
 
-## النشر
-ارفع الملفات كما هي إلى GitHub ثم Import في Vercel.
-Framework Preset: Other
-Root Directory: .
-لا يوجد Next.js ولا مجلد pages/app، وبالتالي لا يظهر خطأ Next السابق.
+## Vercel
+- Framework Preset: Other
+- Root Directory: .
+- Build Command: اتركه فارغًا / Default
+- Output Directory: اتركه فارغًا
 
-## الربط
-1. لو تريد حفظ التقديمات في Supabase: نفذ supabase.sql وضع SUPABASE_URL و SUPABASE_SERVICE_ROLE_KEY في Vercel Environment Variables.
-2. لو تريد إرسال التقديم للبوت فورًا: شغل endpoint في البوت مثل المثال BOT-INTEGRATION-EXAMPLE.js، ثم ضع رابط endpoint في BOT_APPLICATION_WEBHOOK_URL.
-3. ضع نفس secret في Vercel باسم BOT_APPLICATION_WEBHOOK_SECRET وفي البوت باسم TURBO_APPLICATION_SECRET.
+تم إصلاح خطأ Function Runtimes. المسار `/api/submit` يتم تحويله إلى `submit.js` تلقائيًا من خلال `vercel.json`.
 
-## ملاحظة
-لو تركت Supabase و Bot endpoint فارغين، الفورم سيعرض نجاحًا للتجربة فقط ولن يكون هناك تخزين دائم. قبل فتح التقديمات للعامة اربط واحدًا منهما على الأقل.
+## Environment Variables
+راجع `.env.example` وأضف القيم المطلوبة داخل Vercel > Settings > Environment Variables.
