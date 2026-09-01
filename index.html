@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07111f" />
+  <title>Turbo RP | التقديم</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Cairo,system-ui,sans-serif;background:#050a12;color:#eef6ff;min-height:100vh}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 75% 5%,rgba(0,145,255,.16),transparent 28%),radial-gradient(circle at 15% 35%,rgba(0,92,255,.08),transparent 25%),linear-gradient(180deg,#07111f 0,#050a12 52%,#03070d 100%);z-index:-2}
+    .grid{position:fixed;inset:0;z-index:-1;opacity:.24;background-image:linear-gradient(rgba(67,168,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(67,168,255,.05) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 82%)}
+    .wrap{width:min(1180px,92%);margin:auto}.top{height:86px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.07)}
+    .brand{display:flex;align-items:center;gap:13px}.logo{width:54px;height:54px;border-radius:50%;border:1px solid #198fff;box-shadow:0 0 28px rgba(0,145,255,.22);object-fit:cover;background:#07111f}.brand b{font-size:20px;letter-spacing:.5px}.brand small{display:block;color:#718398;font-size:11px}.actions{display:flex;gap:10px}.btn{border:1px solid rgba(255,255,255,.1);background:#0a1422;color:#eaf5ff;padding:11px 17px;border-radius:11px;text-decoration:none;font-weight:700;font-size:13px;cursor:pointer}.btn.primary{border-color:#168fff;background:linear-gradient(135deg,#087fea,#18a5ff);box-shadow:0 12px 35px rgba(0,134,255,.18)}
+    .hero{text-align:center;padding:72px 0 35px}.badge{display:inline-flex;padding:7px 13px;border:1px solid rgba(33,159,255,.32);background:rgba(11,107,187,.08);border-radius:999px;color:#64baff;font-size:12px;font-weight:800}.hero h1{font-size:clamp(34px,6vw,69px);line-height:1.05;margin:23px 0 15px}.hero h1 span{color:#2aa4ff}.hero p{max-width:720px;margin:auto;color:#8ea2b7;line-height:2;font-size:14px}.steps{margin:31px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:800px}.step{padding:15px;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:rgba(8,18,31,.7)}.step strong{font-size:13px}.step small{display:block;color:#688198;margin-top:5px;font-size:11px}
+    .layout{display:grid;grid-template-columns:300px 1fr;gap:24px;padding:40px 0 90px}.side{position:sticky;top:20px;height:max-content;border:1px solid rgba(255,255,255,.08);background:rgba(7,15,26,.9);border-radius:17px;padding:19px}.side h3{margin:0 0 14px;font-size:14px}.side p{color:#74889c;font-size:12px;line-height:1.8}.side .notice{margin-top:15px;padding:12px;border-radius:12px;background:rgba(19,142,235,.08);border:1px solid rgba(40,164,255,.18);color:#9dd5ff;font-size:11px;line-height:1.8}.form-card{border:1px solid rgba(255,255,255,.08);border-radius:20px;background:rgba(7,15,26,.86);box-shadow:0 26px 80px rgba(0,0,0,.25);overflow:hidden}.form-head{padding:24px 27px;border-bottom:1px solid rgba(255,255,255,.07)}.form-head h2{margin:0 0 7px;font-size:23px}.form-head p{margin:0;color:#72879c;font-size:12px}.form{padding:26px}.section{margin-bottom:30px}.section-title{display:flex;align-items:center;gap:10px;margin-bottom:17px}.n{width:29px;height:29px;border-radius:9px;background:#0d8ff0;display:grid;place-items:center;font-size:12px;font-weight:900;box-shadow:0 7px 20px rgba(0,145,255,.2)}.section-title h3{margin:0;font-size:15px}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{margin-bottom:14px}.field label{display:block;font-size:12px;font-weight:700;color:#cfe8ff;margin-bottom:7px}.field input,.field textarea{width:100%;border:1px solid rgba(255,255,255,.09);outline:none;background:#060d17;color:#fff;border-radius:11px;padding:13px 14px;font-family:inherit;transition:.2s}.field textarea{min-height:105px;resize:vertical}.field input:focus,.field textarea:focus{border-color:#168fff;box-shadow:0 0 0 3px rgba(0,145,255,.08)}.hint{font-size:10px;color:#5f758b;margin-top:5px}.check{display:flex;gap:10px;align-items:flex-start;padding:15px;border-radius:12px;border:1px solid rgba(255,255,255,.07);background:#07101b;color:#9db2c6;font-size:12px;line-height:1.8}.check input{margin-top:5px;accent-color:#159aff}.submit{width:100%;margin-top:18px;padding:15px;border:0;border-radius:12px;background:linear-gradient(135deg,#0a80ec,#1babff);color:#fff;font-family:inherit;font-weight:900;font-size:14px;cursor:pointer;box-shadow:0 13px 35px rgba(0,140,255,.23)}.submit:disabled{opacity:.55;cursor:not-allowed}.result{display:none;margin-top:16px;padding:17px;border-radius:13px;text-align:center}.result.ok{display:block;background:rgba(29,196,116,.08);border:1px solid rgba(29,196,116,.28);color:#9af0c5}.result.err{display:block;background:rgba(255,76,95,.08);border:1px solid rgba(255,76,95,.25);color:#ffadb7}.app-id{font-weight:900;font-size:18px;color:white;direction:ltr;display:inline-block;margin:8px 0}.footer{text-align:center;color:#50677c;font-size:11px;padding:25px;border-top:1px solid rgba(255,255,255,.06)}
+    @media(max-width:840px){.layout{grid-template-columns:1fr}.side{position:relative;top:0}.row,.steps{grid-template-columns:1fr}.top{height:auto;padding:15px 0;gap:12px;flex-wrap:wrap}.hero{padding-top:45px}.actions{width:100%}.actions .btn{flex:1;text-align:center}.form{padding:18px}.form-head{padding:20px}}
+  </style>
+</head>
+<body>
+<div class="grid"></div>
+<header><div class="wrap top">
+  <div class="brand">
+    <img class="logo" src="https://cdn.discordapp.com/attachments/1523767129629917315/1539125266629005383/94B486E8-6531-4AF9-AA80-0076DAD60FE5.png?ex=6a97a29b&is=6a96511b&hm=ffb31698c96ee979f9f17081992c11408685e47531926865d4c41ffda73a822f&" alt="Turbo RP">
+    <div><b>TURBO RP</b><small>APPLICATION CENTER</small></div>
+  </div>
+  <div class="actions"><a class="btn" id="rules" href="#" target="_blank">قوانين السيرفر</a><a class="btn primary" id="discord" href="#" target="_blank">Discord</a></div>
+</div></header>
+<main class="wrap">
+<section class="hero">
+  <div class="badge">● التقديمات الرسمية لـ Turbo RP</div>
+  <h1>ابدأ رحلتك داخل <span>Turbo RP</span></h1>
+  <p>املأ البيانات بعناية. التقديم الكتابي هو المرحلة الأولى، وبعد المراجعة سيصلك قرار القبول المبدئي عبر Discord، ثم تنتقل للمقابلة الصوتية في الموعد المعلن.</p>
+  <div class="steps"><div class="step"><strong>01 · تقديم كتابي</strong><small>إرسال نموذج التقديم</small></div><div class="step"><strong>02 · قبول مبدئي</strong><small>إشعار عبر بوت Discord</small></div><div class="step"><strong>03 · مقابلة صوتية</strong><small>المرحلة النهائية</small></div></div>
+</section>
+<section class="layout">
+<aside class="side"><h3>قبل ما تبدأ</h3><p>اقرأ قوانين السيرفر كاملة واكتب إجاباتك بنفسك. الإجابات القصيرة جدًا أو المنسوخة ممكن تأثر على تقييم التقديم.</p><div class="notice">بعد القبول المبدئي، راجع مواعيد المقابلات الصوتية في موقع Turbo RP قبل التوجه لأي مقابلة.</div></aside>
+<div class="form-card">
+  <div class="form-head"><h2>نموذج تقديم Turbo RP</h2><p>الحقول بعلامة * مطلوبة. تأكد أن Discord ID صحيح عشان البوت يقدر يتواصل معك.</p></div>
+  <form class="form" id="applicationForm">
+    <div class="section"><div class="section-title"><span class="n">1</span><h3>معلوماتك الأساسية</h3></div>
+      <div class="row"><div class="field"><label>الاسم الحقيقي *</label><input name="realName" maxlength="80" required placeholder="اكتب اسمك"></div><div class="field"><label>العمر *</label><input name="age" type="number" min="13" max="99" required placeholder="مثال: 20"></div></div>
+      <div class="row"><div class="field"><label>اسمك في Discord *</label><input name="discordUsername" maxlength="80" required placeholder="username"></div><div class="field"><label>Discord ID *</label><input name="discordId" inputmode="numeric" pattern="[0-9]{15,22}" required placeholder="123456789012345678"><div class="hint">Developer Mode → كليك يمين على حسابك → Copy User ID</div></div></div>
+    </div>
+    <div class="section"><div class="section-title"><span class="n">2</span><h3>شخصية الرول بلاي</h3></div>
+      <div class="row"><div class="field"><label>اسم الشخصية *</label><input name="characterName" maxlength="80" required placeholder="اسم الشخصية داخل المدينة"></div><div class="field"><label>عمر الشخصية *</label><input name="characterAge" maxlength="20" required placeholder="مثال: 27"></div></div>
+      <div class="field"><label>خبرتك في الرول بلاي *</label><textarea name="rpExperience" required placeholder="اذكر خبرتك السابقة والسيرفرات أو الأدوار التي لعبتها"></textarea></div>
+      <div class="field"><label>ليه اخترت Turbo RP؟ *</label><textarea name="whyTurbo" required placeholder="اشرح سبب رغبتك في الانضمام"></textarea></div>
+    </div>
+    <div class="section"><div class="section-title"><span class="n">3</span><h3>أسئلة القوانين</h3></div>
+      <div class="field"><label>ما معنى RDM؟ *</label><textarea name="rdm" required placeholder="اشرح بطريقتك"></textarea></div>
+      <div class="field"><label>ما معنى VDM؟ *</label><textarea name="vdm" required placeholder="اشرح بطريقتك"></textarea></div>
+      <div class="field"><label>ما معنى Meta Gaming؟ *</label><textarea name="metagaming" required placeholder="اشرح بطريقتك"></textarea></div>
+      <div class="field"><label>ما معنى Power Gaming؟ *</label><textarea name="powergaming" required placeholder="اشرح بطريقتك"></textarea></div>
+    </div>
+    <div class="section"><div class="section-title"><span class="n">4</span><h3>سيناريوهات رول بلاي</h3></div>
+      <div class="field"><label>سيناريو 1 *</label><textarea name="scenario1" required placeholder="أنت خارج البنك وشخص مسلح وجه سلاحه عليك وطلب منك ترك سيارتك وأموالك. ماذا تفعل؟ ولماذا؟"></textarea></div>
+      <div class="field"><label>سيناريو 2 *</label><textarea name="scenario2" required placeholder="أنت في مطاردة مع الشرطة وتعطلت سيارتك بعد حادث قوي. كيف تكمل السيناريو بشكل صحيح؟"></textarea></div>
+      <div class="field"><label>ملاحظات إضافية</label><textarea name="extra" placeholder="أي شيء تريد إضافته للإدارة"></textarea></div>
+    </div>
+    <label class="check"><input type="checkbox" name="acceptRules" required><span>أؤكد أنني قرأت قوانين Turbo RP، وأن البيانات والإجابات في هذا التقديم صحيحة ومن كتابتي، وأتفهم أن القبول الكتابي هو قبول مبدئي فقط ولا يعتبر قبولًا نهائيًا قبل المقابلة الصوتية.</span></label>
+    <button class="submit" id="submitBtn" type="submit">إرسال التقديم</button>
+    <div id="result" class="result"></div>
+  </form>
+</div>
+</section>
+</main>
+<footer class="footer">Turbo RP © 2026 · Official FiveM Roleplay Applications</footer>
+<script>
+  const RULES_URL = 'https://turbo-rules-site1.vercel.app';
+  const DISCORD_URL = 'https://discord.gg/Kqyb3YaBp';
+  document.getElementById('rules').href = RULES_URL;
+  document.getElementById('discord').href = DISCORD_URL;
+  const form = document.getElementById('applicationForm');
+  const btn = document.getElementById('submitBtn');
+  const result = document.getElementById('result');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    result.className = 'result'; result.textContent = '';
+    btn.disabled = true; btn.textContent = 'جاري إرسال التقديم...';
+    const fd = new FormData(form);
+    const payload = Object.fromEntries(fd.entries());
+    payload.acceptRules = fd.get('acceptRules') === 'on';
+    try {
+      const r = await fetch('/api/submit', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      const data = await r.json();
+      if(!r.ok || !data.ok) throw new Error(data.error || 'تعذر إرسال التقديم');
+      result.className='result ok';
+      result.innerHTML = `تم استلام تقديمك بنجاح.<br>رقم طلبك:<br><span class="app-id">${data.applicationId}</span><br><small>احتفظ بالرقم وانتظر إشعار Discord في حالة القبول المبدئي.</small>`;
+      form.reset();
+      result.scrollIntoView({behavior:'smooth',block:'center'});
+    } catch(err) {
+      result.className='result err'; result.textContent = err.message || 'حدث خطأ أثناء الإرسال';
+    } finally {btn.disabled=false;btn.textContent='إرسال التقديم';}
+  });
+</script>
+</body>
+</html>
